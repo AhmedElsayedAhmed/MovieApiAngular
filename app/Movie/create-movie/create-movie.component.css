@@ -1,0 +1,13 @@
+.createForm{
+    position: absolute;
+
+    
+    width: 50%;
+    height: 50%;
+
+    /* Center form on page horizontally & vertically */
+    top: 50%;
+    left: 25%;
+    margin-top: -150px;
+    margin-left: -150px;
+}

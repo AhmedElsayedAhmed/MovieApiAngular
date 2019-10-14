@@ -1,0 +1,29 @@
+ul{
+    
+    margin-top: -150px;
+    margin-left: -150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 1%;
+    border-radius: 4px;
+    display: block;
+    grid-template-columns: 60px auto;
+width: 20%;
+}
+img{
+    width: 80%;
+    height: 60%;
+    
+}
+.Movies{
+    top: 50%;
+    left: 50%;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 100%;
+}
+span{
+    margin: 10px;
+}

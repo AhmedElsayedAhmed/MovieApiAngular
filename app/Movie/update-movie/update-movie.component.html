@@ -1,0 +1,20 @@
+<div class="updateForm">
+    <form #formdata1="ngForm" class="form-group" (ngSubmit)="Update()">
+        <div>
+            <label>Title : </label>
+            <input type="text" name="Title" class="form-control" [(ngModel)]="model.Title" #refTitle="ngModel"
+                [value]="model.Title">
+        </div>
+        <div>
+            <label>Uploade image : </label>
+            <input #file type="file" class="form-control" name="File" (change)="uploadFile(file.files)">
+        </div>
+        <div>
+            <label>Description : </label>
+            <input type="text" class="form-control" name="Description" [(ngModel)]="model.Description"
+                #refDescription="ngModel" [value]="model.Description">
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary" value="submit">
+    </form>
+</div>

@@ -1,0 +1,28 @@
+<!--<form #formdata1="ngForm" class="form" (ngSubmit)="Create()">
+    <input type="text" name="Title" [(ngModel)]="movie.Title" #refTitle="ngModel">
+    <input #file type="file" name="File" (change)="uploadFile(file.files)">
+    <input type="text" name="Description" [(ngModel)]="movie.Description" #refDescription="ngModel">
+    <input type="submit" value="submit">
+</form>
+-->
+
+<div class="createForm">
+        <form #formdata1="ngForm" class="form-group" (ngSubmit)="Create()">
+                <div>
+                    <label>Title : </label>
+                    <input type="text" name="Title" class="form-control" [(ngModel)]="movie.Title" #refTitle="ngModel"
+                        [value]="model.Title">
+                </div>
+                <div>
+                    <label>Uploade image : </label>
+                    <input #file type="file" class="form-control" name="File" (change)="uploadFile(file.files)">
+                </div>
+                <div>
+                    <label>Description : </label>
+                    <input type="text" name="Description" class="form-control" [(ngModel)]="movie.Description"
+                        #refDescription="ngModel">
+                </div>
+                <br>
+                <input type="submit" class="btn btn-primary" value="submit">
+            </form>
+</div>

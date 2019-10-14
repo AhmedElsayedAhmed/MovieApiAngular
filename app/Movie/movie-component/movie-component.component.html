@@ -1,0 +1,21 @@
+<a routerLink="/Create">Create Movie</a>
+<div class="Movies">
+
+
+    <ul>
+        <li style="display: inline-block;" *ngFor="let item of movies">
+            <img [src]="item.imageName">
+            <div>Title : {{item.title}}</div>
+            <div>Name : {{item.description}}</div>
+
+            <span>
+                <a [routerLink]="['/Delete',item.id]">Delete</a>
+            </span>
+            <span>
+                <a [routerLink]="['/Edit',item.id]">Edit</a>
+
+            </span>
+
+        </li>
+    </ul>>
+</div>
